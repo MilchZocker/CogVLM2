@@ -15,5 +15,5 @@
 	RUN pip install triton
 	RUN pip install --upgrade pip
 	
-	# Lauch CogVLM2
-	CMD chainlit run --port 9000 /webui/web_demo.py
+	# Launch CogVLM2
+	CMD CUDA_VISIBLE_DEVICES=0 QUANT=4 chainlit run --port 9000 /webui/web_demo.py

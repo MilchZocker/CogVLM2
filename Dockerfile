@@ -16,4 +16,4 @@
 	RUN pip install --upgrade pip
 	
 	# Launch CogVLM2
-	CMD CUDA_VISIBLE_DEVICES=0 QUANT=4 chainlit run --port 9000 /webui/web_demo.py
+	CMD CUDA_VISIBLE_DEVICES=0 QUANT=4 chainlit run --port 9000 --host 0.0.0.0 /webui/web_demo.py
